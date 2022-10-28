@@ -7,7 +7,6 @@ C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bi
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Basket.API.dll
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Basket.API.pdb
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Basket.API.Views.dll
-C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Basket.API.Views.pdb
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Acer\source\repos\Asp.netMicroService\src\services\basket\Basket.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll

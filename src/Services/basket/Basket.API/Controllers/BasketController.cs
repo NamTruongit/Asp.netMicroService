@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Basket.API.Entities;
+using Basket.API.Repositories;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace Basket.API.Controllers
 {
@@ -7,10 +11,35 @@ namespace Basket.API.Controllers
     [ApiController]
     public class BasketController : ControllerBase
     {
-        [HttpGet]
-        public string WeaterFocast()
+        private readonly IBasketRepositories _repositories;
+
+        public BasketController(IBasketRepositories repositories)
         {
-            return "wheater is amazed";
+            _repositories = repositories;
+        }
+
+        [HttpGet("{userName}", Name = "Basket")]
+        [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ShoppingCart>> GetBasket(string userName)
+        {
+            var basket = await _repositories.GetBasket(userName);
+            return Ok(basket ?? new ShoppingCart(userName));
+        }
+
+        [HttpPost]
+        [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
+        public async Task<ActionResult<ShoppingCart>> UpdateBasket([FromBody] ShoppingCart basket)
+        {
+            return Ok(await _repositories.Updatebasket(basket));
+        }
+
+        [HttpDelete("{userName}",Name ="DeleteBasket")]
+        [ProducesResponseType(typeof(ShoppingCart),(int)HttpStatusCode.OK)]
+        public async Task<IActionResult> DeleteBasket(string userName)
+        {
+            await _repositories.DeleteBasket(userName);
+
+            return Ok();
         }
     }
 }
