@@ -1,9 +1,21 @@
 name: dockercompose2177619270275397375
 services:
+  basketdb:
+    container_name: basketdb
+    image: redis:alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 6379
+      published: "6379"
+      protocol: tcp
+    restart: always
   catalog.api:
     build:
       context: C:\Users\Acer\source\repos\Asp.netMicroService\src
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
+    container_name: catalog.api
     depends_on:
       catalogdb:
         condition: service_started
