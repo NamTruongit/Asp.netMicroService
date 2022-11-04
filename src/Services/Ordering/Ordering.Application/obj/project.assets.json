@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Ordering.Doman/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Ordering.Doman.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ordering.Doman.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Ordering.Doman/1.0.0": {
+      "type": "project",
+      "path": "../Ordering.Doman/Ordering.Doman.csproj",
+      "msbuildProject": "../Ordering.Doman/Ordering.Doman.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Ordering.Doman >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Acer\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Acer\\source\\repos\\Asp.netMicroService\\src\\Services\\Ordering\\Ordering.Doman\\Ordering.Doman.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\Asp.netMicroService\\src\\Services\\Ordering\\Ordering.Doman\\Ordering.Doman.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

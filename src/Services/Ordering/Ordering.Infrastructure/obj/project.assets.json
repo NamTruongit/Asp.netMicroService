@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Ordering.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Ordering.Doman": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Ordering.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ordering.Application.dll": {}
+        }
+      },
+      "Ordering.Doman/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Ordering.Doman.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ordering.Doman.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Ordering.Application/1.0.0": {
+      "type": "project",
+      "path": "../Ordering.Application/Ordering.Application.csproj",
+      "msbuildProject": "../Ordering.Application/Ordering.Application.csproj"
+    },
+    "Ordering.Doman/1.0.0": {
+      "type": "project",
+      "path": "../Ordering.Doman/Ordering.Doman.csproj",
+      "msbuildProject": "../Ordering.Doman/Ordering.Doman.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Ordering.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Acer\\.nuget\\packages\\": {},
@@ -38,7 +75,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Acer\\source\\repos\\Asp.netMicroService\\src\\Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\Asp.netMicroService\\src\\Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
