@@ -1,0 +1,15 @@
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.deps.json
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Application.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Doman.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\bin\Debug\net5.0\Ordering.Doman.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.csproj.CopyComplete
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\refint\Ordering.Application.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\Ordering.Application.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Application\obj\Debug\net5.0\ref\Ordering.Application.dll

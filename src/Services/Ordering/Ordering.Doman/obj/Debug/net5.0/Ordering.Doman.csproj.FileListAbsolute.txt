@@ -1,0 +1,12 @@
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\bin\Debug\net5.0\Ordering.Doman.deps.json
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\bin\Debug\net5.0\Ordering.Doman.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\bin\Debug\net5.0\Ordering.Doman.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\refint\Ordering.Doman.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\Ordering.Doman.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\Services\Ordering\Ordering.Doman\obj\Debug\net5.0\ref\Ordering.Doman.dll

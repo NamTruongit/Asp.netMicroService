@@ -1,0 +1,41 @@
+﻿using AutoMapper;
+using MediatR;
+using Microsoft.Extensions.Logging;
+using Ordering.Application.Contracts.Persistence;
+using Ordering.Application.Exeptions;
+using Ordering.Doman.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Ordering.Application.Features.Orders.Command.DeleteOrder
+{
+    public class DeleteOrderCommandHandler : IRequestHandler<DeleteOrderCommand>
+    {
+        private readonly IOrderRepository _orderRepository;
+        private readonly IMapper _mapper;
+        private readonly ILogger<DeleteOrderCommandHandler> _logger;
+        public DeleteOrderCommandHandler(IOrderRepository orderRepository,IMapper mapper,ILogger<DeleteOrderCommandHandler> logger)
+        {
+            _orderRepository = orderRepository ?? throw new ArgumentNullException(nameof(orderRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+        }
+
+        public async Task<Unit> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
+        {
+            var orderTodelete = await _orderRepository.GetByIdAsync(request.Id);
+            if (orderTodelete == null)
+            {
+               // _logger.LogError("Order not Exist on database");
+                throw new NotFoundException(nameof(Order),request.Id);
+            }
+            await _orderRepository.DeleteAsync(orderTodelete);
+            _logger.LogInformation($"Order{orderTodelete.Id} is successfully to deleted ");
+            return Unit.Value;
+        }
+    }
+}
