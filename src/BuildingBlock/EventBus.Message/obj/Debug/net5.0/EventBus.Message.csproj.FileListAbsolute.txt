@@ -1,0 +1,12 @@
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\bin\Debug\net5.0\EventBus.Message.deps.json
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\bin\Debug\net5.0\EventBus.Message.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\bin\Debug\net5.0\EventBus.Message.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.AssemblyInfoInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.AssemblyInfo.cs
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\refint\EventBus.Message.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\EventBus.Message.pdb
+C:\Users\Acer\source\repos\Asp.netMicroService\src\BuildingBlock\EventBus.Message\obj\Debug\net5.0\ref\EventBus.Message.dll

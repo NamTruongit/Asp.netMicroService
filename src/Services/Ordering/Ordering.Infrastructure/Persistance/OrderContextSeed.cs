@@ -14,12 +14,12 @@ namespace Ordering.Infrastructure.Persistance
         {
             if (!orderContext.Orders.Any())
             {
-                orderContext.Orders.AddRange(GetPreConfiguredOrders());
+                orderContext.Orders.AddRange(GetPreconfiguredOrders());
                 await orderContext.SaveChangesAsync();
                 logger.LogDebug("See database associated with context {DbContextName} ",typeof(OrderContext).Name);
             }
         }
-        private static IEnumerable<Order> GetPreConfiguredOrders()
+        private static IEnumerable<Order> GetPreconfiguredOrders()
         {
             return new List<Order>
             {

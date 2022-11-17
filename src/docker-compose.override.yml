@@ -23,7 +23,21 @@ services:
         - "5050:80"
     volumes:
        - pgadmin_data:/root/.pgadming
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+        - "5672:5672"
+        - "15672:15672"
 
+  orderdb:
+    container_name: orderdb
+    environment:
+        SA_PASSWORD: "SwN12345678"
+        ACCEPT_EULA: "Y"
+    restart: always
+    ports:
+        - "1433:1433"
   portainer:
     container_name: portainer
     restart: always
@@ -61,10 +75,12 @@ services:
     container_name: baskets.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "CacheSetting:ConnectionString=basketdb:6379"
-      - "GrpcSettings:Discount=discount.grpc"
+      - "CacheSettings:ConnectionString=basketdb:6379"
+      - "GrpcSettings:DiscountUrl=http://discount.grpc"
+      - "EventBusSettings:HostAddress=amqp://guest:guest@rabbitmq:5672"
     depends_on:
       - basketdb
+      - rabbitmq
     ports:
       - "8001:80"
 
@@ -89,4 +105,31 @@ services:
       - discountdb
     ports:
       - "8007:80"
+
+
+  ordering.api:
+    container_name: ordering.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=SwN12345678" 
+      - "EventBusSettings:HostAddress=amqp://guest:guest@rabbitmq:5672"
+    depends_on:
+    - orderdb
+    - rabbitmq
+    ports:
+      - "8008:80"
+
+
+  acelotapigateway:
+    container_name: acelotapigateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - catalog.api
+      - baskets.api
+      - discount.api
+      - ordering.api
+
+    ports:
+      - "8010:80"
 

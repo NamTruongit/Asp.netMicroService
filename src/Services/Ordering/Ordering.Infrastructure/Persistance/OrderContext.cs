@@ -12,7 +12,7 @@ namespace Ordering.Infrastructure.Persistance
 {
     public class OrderContext : DbContext
     {
-        public OrderContext(DbContextOptions<OrderContext> options) :base(options)
+        public OrderContext(DbContextOptions<OrderContext> options) : base(options)
         {
 
         }
@@ -27,14 +27,15 @@ namespace Ordering.Infrastructure.Persistance
                 {
                     case EntityState.Added:
                         entry.Entity.CreatedDate = DateTime.Now;
-                        entry.Entity.CreatedBy = "nam";
+                        entry.Entity.CreatedBy = "swn";
                         break;
                     case EntityState.Modified:
-                        entry.Entity.CreatedDate = DateTime.Now;
-                        entry.Entity.CreatedBy = "nam";
+                        entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedBy = "swn";
                         break;
                 }
             }
+
             return base.SaveChangesAsync(cancellationToken);
         }
     }
