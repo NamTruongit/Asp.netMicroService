@@ -6,7 +6,7 @@ using Shopping.Aggregator.Extentions;
 
 namespace Shopping.Aggregator.Services
 {
-    public class BasketService
+    public class BasketService : IBasketService
     {
         private readonly HttpClient _client;
 
@@ -17,7 +17,7 @@ namespace Shopping.Aggregator.Services
 
         public async Task<BasketModel> GetBasket(string userName)
         {
-            var response = await _client.GetAsync($"/api/v1/Basket/{userName}");
+            var response = await _client.GetAsync($"/api/Baskets/{userName}");
             return await response.ReadContentAs<BasketModel>();
         }
     }

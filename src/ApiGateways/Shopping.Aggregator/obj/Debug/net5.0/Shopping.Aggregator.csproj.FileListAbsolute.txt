@@ -20,3 +20,9 @@ C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregat
 C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\obj\Debug\net5.0\Shopping.Aggregator.pdb
 C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\obj\Debug\net5.0\Shopping.Aggregator.genruntimeconfig.cache
 C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\obj\Debug\net5.0\ref\Shopping.Aggregator.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\obj\Debug\net5.0\Shopping.Aggregator.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Acer\source\repos\Asp.netMicroService\src\ApiGateways\Shopping.Aggregator\obj\Debug\net5.0\Shopping.Aggregator.csproj.CopyComplete
